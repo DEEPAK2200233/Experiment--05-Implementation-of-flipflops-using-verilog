@@ -132,6 +132,7 @@ end
 endmodule
 ```
 ### JK FLIPFLOP
+```
 module jk(j,k,clk,q,qbar);
 input j,k,clk;
 output reg q;
@@ -144,8 +145,9 @@ q=(j&(~q))|((~k)&q);
 qbar=((~j)&q)|(k &(~q));
 end 
 endmodule
-
+```
 ### T FLIPFLOP
+```
 module T(T,clk,Q,Qbar);
 input T,clk;
 output reg Q;
@@ -158,8 +160,9 @@ Q=(T&(~Q))|((~T)&Q);
 Qbar=((~T)&Qbar)|(T&(~Qbar));
 end
 endmodule
-
+```
 ### D FLIPFLOP
+```
 module D(D,clk,Q,Qbar);
 input D,clk;
 output reg Q;
@@ -172,7 +175,7 @@ Q=D;
 Qbar=~D;
 end
 endmodule
-
+```
 ### RTL LOGIC FOR FLIPFLOPS 
 ### SR FLIPFLOP
 
